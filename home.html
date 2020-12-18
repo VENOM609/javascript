@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+        function processForm()
+        {
+            myform=document.registration;
+            document.write("hello "+myform.name.value + "roll-no = " +myform.roll.value);
+           
+        }
+    </script>
+</head>
+<body>
+   <form action="post" name="registration" onstatus="processForm()">
+    Name : <input type="text" name="name">
+    roll-no : <input type="roll" name="roll-no" >
+    branch : <input type="text" name="branch">
+    <div class="butns"><input type="submit" name="submit" >
+        <button class="cancel">cancel</button>
+        <button class="status">status</button>
+    </div>
+    
+   </form>
+    
+</body>
+</html>
